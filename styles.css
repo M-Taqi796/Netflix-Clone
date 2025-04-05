@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("/assets/fonts/Netflix Sans-fontiko/NetflixSans-Regular.otf");
+}
+@font-face {
+  font-family: "Netflix Sans Bold";
+  src: url("/assets/fonts/Netflix Sans-fontiko/NetflixSans-Bold.otf");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #3d222a, #000);
+  font-family: Netflix Sans, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  position: sticky;
+  top: 3px;
+  padding-top: 20px;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav-first-line {
+  display: flex;
+  padding-inline: 36px;
+  justify-content: space-between;
+}
+.nav-second-line {
+  font-size: 0.875rem;
+  font-weight: 500;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9); /* 0.5 = 50% opacity */
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.nav-second-line a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  padding-inline: 20px;
+}
+#nav-signin {
+  border: 0;
+  cursor: pointer;
+  fill: currentColor;
+  position: relative;
+  transition-duration: 250ms;
+  transition-property: background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
+  vertical-align: text-top;
+  width: auto;
+  font-size: 0.875rem;
+  font-weight: 600;
+  min-height: 2rem;
+  padding: 0.25rem 1rem;
+  border-radius: 100px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 40px;
+  margin-block: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/98df3030-1c2b-4bd1-a2f5-13c611857edb/web_tall_panel/PK-en-20250331-TRIFECTA-perspective_bf6b6774-9ea8-44d1-aee4-677d7ffd5052_large.jpg");
+  background-size: cover;
+  width: 100%px;
+  height: auto;
+  border-radius: 20px;
+  padding-inline: 300px;
+  padding-block: 100px;
+}
+.container-content {
+  text-align: center;
+  color: white;
+}
+.container-content h1 {
+  font-family: Netflix Sans Bold;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.container-content h3 {
+  margin-bottom: 25px;
+}
+.get-email {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.imputStyle {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 55%;
+  border-radius: 30px;
+  border: none;
+}
+.imputStyle::placeholder {
+  color: white;
+  font-size: 15px;
+}
+.GetStartedButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Netflix Sans;
+  width: 35%;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+.categoryContainer {
+  margin-inline: 80px;
+}
+.trending {
+  color: rgb(255, 255, 255);
+}
+.trendingImages {
+  display: flex;
+  justify-content: space-around;
+}
+.trendingImage {
+  background-size: cover;
+  width: 128px;
+  height: 256px;
+  border-radius: 20px;
+}
+.trendingImage1 {
+  background-image: url("https://occ-0-5346-58.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABXksAHXUuUdiqGUowSUMU1mUv4lPA-z4sOTIa5Uf0U0O9-wUlCsgFa-AHII1fn-Of8G2g2o0xl3KQk5KQLLy046kA6MnJQX0Btk-eJA_B36ORTsAxm8gB8D09nSb1m6QaRzR_UE79TBnlVLQqwp74k9wUmogmn2cDvNnaTg8OQ.webp?r=a41");
+}
+.trendingImage2 {
+  background-image: url("https://occ-0-5346-58.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABacrCXMLlWnxdiRot_1CVyGD6wgDHKQ_Un4rWHti1kyYn7viDTwwAOgAiHQsjGPcJAG03oWbZQial66ECMr2QcsKy2bSmUTsKuUPqMvvUYdlk3rjCvrAoCLVzMDERFsoYammxSBZxvG_5E5IMvUov4Qd_e5JokYc7UKRFsdyyHK5ixS_2wEnT4gu-fOBF6LvdMOXtSbgIirS9gSA.webp?r=296");
+}
+.trendingImage3 {
+  background-image: url("https://occ-0-5346-58.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABYhVYc3QJfwQp2eBhmMdRmDnnSdqupXjtkckrwSzXXMIsXhaCIqZ-8iFGR36pyB94ttq19urloRzSZ4huyGxEvrUx_UVQ93iBOn-il5TyXRuwVyVlkQrq-fF6sHCZABXLSqTBHU7bzhJDEw_0ijLwT7ZeKZmob1g91dMfQZCYK4y3ARDVIf4oz34V4nZpxa1yNHMUtRKOcQKgnDe.webp?r=47b");
+}
+.trendingImage4 {
+  background-image: url("https://occ-0-5346-58.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABWY2l29_Q4fcWvurVVPaQskEeybW5H-pz0CEcX59H0yDREVUcHOPdlpKjhb-AXYmIFt8ae6097xK17E5IGOUfagQ-SJzJTwRc_lNWC_j0pRPan0IziFLF6c2APQ_i2xlNlvvar-fiNgYE0jhcgFW.webp?r=82c");
+}
+.trendingImage5 {
+  background-image: url("https://occ-0-5346-58.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABR-n0L3xLejfriGAZGnhUugV6_pCzSGOYhFnASjwhTlfyEF79s75SAbedt-RLqAKvAWO_fwQAnw24JONtBeo_nl4D3muQzsvP3IlxU5Rk_7C2bswHhjJGdo1ojJGooNe_CYskUxPkW7wQCAk0IIA.webp?r=06d");
+}
+.trendingImage6 {
+  background-image: url("https://occ-0-5346-58.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABRle22NBlr0-IcROZhzASPWgK_S2e-WAG5jx-Jcp_kzDmdK39dWulrS9eo2KBNYGmVxmKCh2voDOVZo3W9C2d5byh5ezBwfQpE33HkvxiAsQfalj2h-UONU46-SthdlEAlQ3rhcEYmynsJe8Kaca9O3TQQkwOm4_1U5VlDPpW-dc94mMpWUoe2pFsNTYuMjVU9C9Ku8sH35WlaC5.webp?r=127");
+}
+.trendingImage7 {
+  background-image: url("https://occ-0-5346-58.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABVjrLRhUd4sxt54Fc2JheAUH6H8LLaABtXs7BMTiUAY0XMjlDQ52iV2G2iP7P8d3kPeEPTqI_zAXmXfjFc3u-uD2z1uT6_lqu9o7LAT-F_A1UypkdlQ02cmcoML68nMCwZkETzaOMuM6js-5wL6q.webp?r=942");
+}
+.trendingImages-number {
+  font-family: Netflix Sans Bold;
+  font-size: 70px;
+  position: relative;
+  font-weight: 900px;
+  top: 1px;
+  left: -24px;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+.cat-heading {
+  font-family: Netflix Sans Bold;
+  color: rgb(255, 255, 255, 0.85);
+  padding-block: 20px;
+  font-size: 30px;
+}
+.Plan-Cards {
+  display: flex;
+  justify-content: space-around;
+}
+.Mobile-Card {
+  background: linear-gradient(to bottom right, #1c4072, #120c1f);
+}
+.Basic-Card {
+  background: linear-gradient(to bottom right, #1c4072, #120c1f);
+}
+.Standard-Card {
+  background: linear-gradient(to bottom right, #59216e, #120c1f);
+}
+.Premium-Card {
+  background: linear-gradient(to bottom right, #6c1e41, #120c1f);
+}
+.Plan-Card {
+  padding: 16px;
+  padding-top: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  color: rgb(255, 255, 255);
+  height: 204px;
+  width: 232px;
+  position: relative;
+  overflow: hidden;
+}
+.Rates {
+  position: absolute;
+  bottom: 16px;
+}
+.feature {
+  display: flex;
+}
+.Most-Popular {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 1px;
+}
+
+.Reason-Card {
+    padding: 16px;
+    padding-top: 24px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    height: 176px;
+    width: 232px;
+    position: relative;
+    overflow: hidden;
+  }
+
+.question-box{
+    width: 95%;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.question-text{
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.userdata{
+    /* width: 46%; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.userdata input{
+    padding: 20px;
+    width: 360px;
+    background-color: rgba(109, 108, 108, 0.548);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+.userdata input::placeholder{
+    color: rgba(255, 255, 255, 0.658);
+}
+.userdata button{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 250px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: Netflix Sans Bold;
+    margin-left: 5px;
+}
+
+footer{
+    margin-top: 60px;
+    margin-inline: 80px;
+    padding-bottom: 80px;
+}
+footer a{
+    color: rgba(255, 255, 255, 0.658);
+}
+.nav-links{
+    display: flex;
+    margin-bottom: 20px;
+}
+.nav-links a{
+    padding-block: 10px;
+}
+.col{
+    /* border: 2px solid orange; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}
+
+select{
+    padding-inline: 20px;
+    padding-block: 5px;
+    background-color: rgba(109, 108, 108, 0);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.658);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
